@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the portfolio page of Elie Paul">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Elie's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/d130b01c6c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <section class="menu">
+            <ul class="menu-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </section>
+        <aside class="themeToggler">
+            <button id="changeTheme" data-theme-toggle onclick="toggleTheme()">Change Theme</button>
+        </aside>
+    </nav>
+     <section class="home" id="home">
+            <article class="home-content">
+                <h1> Elie Paul </h1>
+                <h2>Get a website that bring more customer to your business!</h2>
+                <p> Your website should work as hard as you do. I help businesses build fast, modern, and user-friendly websites that turn visitors into customers. With 5+ years of experience in React, JavaScript, and web development best practices, I turn complex ideas into simple and effective digital solutions. Whether you need a new site, a redesign, or a custom feature to support your growth, I’m here to help. </p>
+                <button> <i class="fa-solid fa-arrow-right"></i> Work with me</button>
+            </article>
+            <aside class="home-image">
+                <img class="profile-picture" src="images/Marco.jpg" alt="Elie Paul's profile image">
+            </aside>
+       </section>
+        <section class="about" id="about">
+            <h1> About </h1>
+       </section>
+       <section class="portfolio" id="portfolio">
+            <h1> Portfolio </h1>
+            <button><a href="./portfolio.html">See more</a></button>
+       </section>
+       <section class="contact" id="contact">
+            <header class="contact-header">
+                <h1> Contact Us</h1>
+            </header>
+            <section class="contact-content">
+                <article>
+                    <p>Description</p>
+                </article>
+                <aside>
+                    <form id="contact-form">
+                       <section class="contact-input">
+                        <label for="firstName">First Name</label>
+                        <input type="text"  id="firstName" name="firstName" required>
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message"></textarea>
+                        <input type="submit" value="Submit">
+                       </section>
+                    </form>
+                </aside>
+            </section>
+       </section>    
+</body>
+</html>
