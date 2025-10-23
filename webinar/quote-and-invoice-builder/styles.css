@@ -1,0 +1,142 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+html, body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: var(--primary-color);
+}
+
+:root {
+    --primary-color: white;
+    --secondary-color: black;
+    --tertiary-color: blue;
+    --title-size: 48px;
+    --title-font: "Cookie", cursive;
+    --body-font: "Open Sans", sans-serif;
+    --button-font-size: 24px;
+    --button-font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-family: "Cookie", cursive;
+    font-weight: 600;
+    font-size: var(--title-size);
+}
+
+img {
+    max-width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    font-size: var(--button-font-size);
+    font-family: inherit;
+    font-weight: var(--button-font-weight);
+    cursor: pointer;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+}
+
+.btn-menu {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.qi-nav {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.qi-menu-list-mobile {
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-color);
+    opacity: 0.95;
+    transform: translateX(0);
+}
+
+.qi-menu-list-desktop {
+    display: none;
+}
+
+.qi-title {
+    text-align: center;
+}
+
+.qi-hero {
+    display:flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    margin: 20px;
+    gap: 20px;
+}
+
+.qi-cta {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+.qi-nav {
+    flex-direction: row;
+}
+
+.qi-menu-list-mobile {
+    flex-direction: row;
+    position: static;
+    top: auto;
+    left: auto;
+    width: auto;
+    height: auto;
+}
+
+}
+
+@media screen and (min-width: 1024px) {
+    .qi-hero {
+        flex-direction: row;
+    }
+
+    .qi-menu-list-mobile {
+        display: none;
+    }
+
+    .qi-menu-list-desktop {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .qi-cta {
+        flex-direction: row;
+    }
+}

@@ -4,7 +4,7 @@ html, body {
     box-sizing: border-box;
     font-size:16px;
     font-family: "Savate", sans-serif;
-     font-optical-sizing: auto;
+    font-optical-sizing: auto;
     font-style: normal;
     line-height: 1.6;
 }
@@ -30,6 +30,27 @@ body {
 }
 
 
+.btn {
+    display: inline-block;
+    padding: 20px 20px;
+    margin: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid black;
+    background-color: #F0F0F0;
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+
 .menu-list {
     display: flex;
     gap: 20px;
@@ -43,7 +64,7 @@ body {
 }
     }
 
-  
+
 
 nav {
     display: flex;
@@ -72,17 +93,11 @@ a {
     text-decoration: none;
 }
 
-button {
-    margin: 20px;
-    padding: 20px;
-    font-size: 20px;
-    font-weight: 600;
-    font-family: inherit;
-
-    &:hover {
-        cursor: pointer;
-    }
+#hamburgerMenu {
+    display: none;
 }
+
+
 
 .home {
     display: flex;
@@ -96,6 +111,7 @@ button {
     align-items: center;
 
     .home-content {
+        min-width: 400px;
         margin: 20px 20px;
         padding: 20px 20px;
     }
@@ -136,5 +152,86 @@ input:invalid {
 
 input:valid {
     border: 2px solid green;
+}
+
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+
+    .portfolio-item {
+        margin: 20px;
+        padding: 20px;
+        gap: 20px;
+        min-width: 300px;
+        max-width: 500px;
+        border: 2px solid grey;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.portfolio-slideshow {
+    position: relative;
+    width: 100%;
+    height: 80dvh;
+    margin: auto;
+    .slide {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: none;
+
+        img {
+            width: 300px;
+        }
+
+        &:first-child {
+            display: block;
+        }
+    }
+
+    .prev, .next {
+        position: absolute;
+        bottom: 10%;
+        transform: translateY(-10%);
+        width: auto;
+    }
+    .next {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        flex-direction: column-reverse;
+    }
+
+    .portfolio-gallery {
+        grid-template-columns: 1fr;
+       
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    #hamburgerMenu {
+        display: inline-block;
+    }
+
+    .mobile-menu {
+        .menu-list {
+            flex-direction: column;
+
+            li {
+                border-bottom: 2px solid var(--primary-color);
+            }
+        }
+    }
 }
 

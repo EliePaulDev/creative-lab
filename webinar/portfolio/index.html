@@ -17,15 +17,26 @@
 <body>
     <nav>
         <section class="menu">
-            <ul class="menu-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <section class="desktop-menu">
+                <ul class="menu-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </section>
         </section>
         <aside class="themeToggler">
-            <button id="changeTheme" data-theme-toggle onclick="toggleTheme()">Change Theme</button>
+            <button class="btn" id="changeTheme" data-theme-toggle onclick="toggleTheme()">Change Theme</button>
+            <button class="btn" id="hamburgerMenu"><i class="fa-solid fa-bars"></i></button>
+            <section id="mobile-menu" class="mobile-menu hidden">
+                <ul class="menu-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </section>
         </aside>
     </nav>
      <section class="home" id="home">
@@ -33,7 +44,7 @@
                 <h1> Elie Paul </h1>
                 <h2>Get a website that bring more customer to your business!</h2>
                 <p> Your website should work as hard as you do. I help businesses build fast, modern, and user-friendly websites that turn visitors into customers. With 5+ years of experience in React, JavaScript, and web development best practices, I turn complex ideas into simple and effective digital solutions. Whether you need a new site, a redesign, or a custom feature to support your growth, I’m here to help. </p>
-                <button> <i class="fa-solid fa-arrow-right"></i> Work with me</button>
+                <button class="btn"> <i class="fa-solid fa-arrow-right"></i> Work with me</button>
             </article>
             <aside class="home-image">
                 <img class="profile-picture" src="images/Marco.jpg" alt="Elie Paul's profile image">
@@ -43,8 +54,54 @@
             <h1> About </h1>
        </section>
        <section class="portfolio" id="portfolio">
-            <h1> Portfolio </h1>
-            <button><a href="./portfolio.html">See more</a></button>
+            <header>
+                <h1> Portfolio </h1>
+            </header>
+            <section class="portfolio-gallery">
+            <article class="portfolio-item">
+                <img src="images/team-nocoloco-LWFdfx-5oEE-unsplash.jpg" alt="">
+                <h3>Web Application Project 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores deleniti explicabo cum magni impedit eligendi, ducimus corrupti debitis quam facere.</p>
+                <a class="btn" href="https://github.com/EliePaulDev/portfolio-page">Learn more</a>
+            </article>
+            <article class="portfolio-item">
+                <img src="images/team-nocoloco-LWFdfx-5oEE-unsplash.jpg" alt="">
+                <h3>Web Application Project 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores deleniti explicabo cum magni impedit eligendi, ducimus corrupti debitis quam facere.</p>
+                <a class="btn" href="https://github.com/EliePaulDev/portfolio-page">Learn more</a>
+            </article>
+            <article class="portfolio-item">
+                <img src="images/team-nocoloco-LWFdfx-5oEE-unsplash.jpg" alt="">
+                <h3>Web Application Project 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores deleniti explicabo cum magni impedit eligendi, ducimus corrupti debitis quam facere.</p>
+                <a class="btn" href="https://github.com/EliePaulDev/portfolio-page">Learn more</a>
+            </article>
+            <article class="portfolio-item">
+                <img src="images/team-nocoloco-LWFdfx-5oEE-unsplash.jpg" alt="">
+                <h3>Web Application Project 4</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores deleniti explicabo cum magni impedit eligendi, ducimus corrupti debitis quam facere.</p>
+                <a class="btn" href="https://github.com/EliePaulDev/portfolio-page">Learn more</a>
+            </article>
+            <article class="portfolio-item">
+                <img src="images/team-nocoloco-LWFdfx-5oEE-unsplash.jpg" alt="">
+                <h3>Web Application Project 5</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores deleniti explicabo cum magni impedit eligendi, ducimus corrupti debitis quam facere.</p>
+                <a class="btn" href="https://github.com/EliePaulDev/portfolio-page">Learn more</a>
+            </article>
+            <article class="portfolio-item">
+                <img src="images/team-nocoloco-LWFdfx-5oEE-unsplash.jpg" alt="">
+                <h3>Web Application Project 6</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores deleniti explicabo cum magni impedit eligendi, ducimus corrupti debitis quam facere.</p>
+                <a class="btn" href="https://github.com/EliePaulDev/portfolio-page">Learn more</a>
+            </article>
+            <article class="portfolio-item">
+                <img src="images/team-nocoloco-LWFdfx-5oEE-unsplash.jpg" alt="">
+                <h3>Web Application Project 7</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores deleniti explicabo cum magni impedit eligendi, ducimus corrupti debitis quam facere.</p>
+                <a class="btn" href="https://github.com/EliePaulDev/portfolio-page">Learn more</a>
+            </article>
+            </section>
+            <a class="btn" href="./portfolio.html">See more</a>
        </section>
        <section class="contact" id="contact">
             <header class="contact-header">
@@ -65,7 +122,7 @@
                         <input type="email" id="email" name="email" required>
                         <label for="message">Message</label>
                         <textarea name="message" id="message"></textarea>
-                        <input type="submit" value="Submit">
+                        <input class="btn" type="submit" value="Submit">
                        </section>
                     </form>
                 </aside>

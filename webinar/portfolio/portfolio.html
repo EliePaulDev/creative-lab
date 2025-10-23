@@ -3,9 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
+    <script src="index.js" defer></script>
 </head>
 <body>
+     <nav>
+        <section class="menu">
+            <section class="desktop-menu">
+                <ul class="menu-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </section>
+        </section>
+        <aside class="themeToggler">
+            <button class="btn" id="changeTheme" data-theme-toggle onclick="toggleTheme()">Change Theme</button>
+            <button class="btn" id="hamburgerMenu"><i class="fa-solid fa-bars"></i></button>
+            <section id="mobile-menu" class="mobile-menu hidden">
+                <ul class="menu-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </section>
+        </aside>
+    </nav>
+    <section>
     <h1> Portfolio </h1>
+    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem ad quos inventore repellat assumenda ea consectetur fugit, numquam laboriosam sit animi veritatis qui! Unde a, voluptas voluptates vitae ipsum autem?</p>
+
+    <section class="portfolio-slideshow">
+        <article class="slide">
+            <img src="images/altumcode-XMFZqrGyV-Q-unsplash.jpg">
+            <h4>Web project 1</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sed laborum vero impedit nam reiciendis magnam. Similique deserunt dolorum velit aperiam praesentium, maxime molestiae tempore exercitationem eius obcaecati nam ratione.</p>
+        </article>
+        <article class="slide">
+            <img src="images/altumcode-XMFZqrGyV-Q-unsplash.jpg">
+            <h4>Web project 1</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sed laborum vero impedit nam reiciendis magnam. Similique deserunt dolorum velit aperiam praesentium, maxime molestiae tempore exercitationem eius obcaecati nam ratione.</p>
+        </article>
+        <article class="slide">
+            <img src="images/altumcode-XMFZqrGyV-Q-unsplash.jpg">
+            <h4>Web project 2</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sed laborum vero impedit nam reiciendis magnam. Similique deserunt dolorum velit aperiam praesentium, maxime molestiae tempore exercitationem eius obcaecati nam ratione.</p>
+        </article>
+        <article class="slide">
+            <img src="images/altumcode-XMFZqrGyV-Q-unsplash.jpg">
+            <h4>Web project 3</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sed laborum vero impedit nam reiciendis magnam. Similique deserunt dolorum velit aperiam praesentium, maxime molestiae tempore exercitationem eius obcaecati nam ratione.</p>
+        </article>
+        <article class="slide">
+            <img src="images/altumcode-XMFZqrGyV-Q-unsplash.jpg">
+            <h4>Web project 4</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sed laborum vero impedit nam reiciendis magnam. Similique deserunt dolorum velit aperiam praesentium, maxime molestiae tempore exercitationem eius obcaecati nam ratione.</p>
+        </article>
+        <article class="slide">
+            <img src="images/altumcode-XMFZqrGyV-Q-unsplash.jpg">
+            <h4>Web project 5</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sed laborum vero impedit nam reiciendis magnam. Similique deserunt dolorum velit aperiam praesentium, maxime molestiae tempore exercitationem eius obcaecati nam ratione.</p>
+        </article>
+        <article class="slide">
+            <img src="images/altumcode-XMFZqrGyV-Q-unsplash.jpg">
+            <h4>Web project 6</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sed laborum vero impedit nam reiciendis magnam. Similique deserunt dolorum velit aperiam praesentium, maxime molestiae tempore exercitationem eius obcaecati nam ratione.</p>
+        </article>
+        <article class="slide">
+            <img src="images/altumcode-XMFZqrGyV-Q-unsplash.jpg">
+            <h4>Web project 7</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sed laborum vero impedit nam reiciendis magnam. Similique deserunt dolorum velit aperiam praesentium, maxime molestiae tempore exercitationem eius obcaecati nam ratione.</p>
+        </article>
+        <article class="slide">
+            <img src="images/altumcode-XMFZqrGyV-Q-unsplash.jpg">
+            <h4>Web project 8</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sed laborum vero impedit nam reiciendis magnam. Similique deserunt dolorum velit aperiam praesentium, maxime molestiae tempore exercitationem eius obcaecati nam ratione.</p>
+        </article>
+        <button class="prev btn" onclick="plusSlides(-1)">Prev</button>
+        <button class="next btn" onclick="plusSlides(1)">Next</button>
+    </section>
+    </section>
+    <a href="./index.html" class="btn">Back</a>
 </body>
 </html>
