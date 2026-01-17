@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="UTF-8">
+        <title>Quote and Invoice Builder - Get Your Quote</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Create a professional quote quickly and easily with our Quote Builder. Perfect for freelancers and small businesses.">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=My+Soul&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik+Gemstones&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d130b01c6c.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <nav class="qi-nav">
+            <section>
+                <h1>Q&I</h1>
+            </section>
+            <section class="qi-menu">
+                <section>
+                    <button class="btn btn-menu" id="hamburger-menu"><i class="fa-solid fa-bars"></i></button>
+                </section>
+                <section id="mobile-menu">
+                    <ul class="qi-menu-list-mobile">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Quote</a></li>
+                        <li><a href="#">Invoice</a></li>
+                        <li>Mobile</li>
+                    </ul>
+                </section>
+
+                <ul class="qi-menu-list-desktop">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Quote</a></li>
+                    <li><a href="#">Invoice</a></li>
+                </ul>
+            </section>
+        </nav>
+        <main>
+            <header class="qi-title">
+                <h1>Create Your Professional Quote</h1>
+            </header>
+            <section class="qi-description">
+                <p>Use our Quote Builder to generate a professional quote for your clients in just a few easy steps. Perfect for freelancers and small businesses looking to streamline their quoting process.</p>
+            </section>
+            <section class="qi-forms">
+                 <form id="quote-form" action="">
+                    <fieldset class="qi-form">
+                        <legend>Business Information</legend>
+                        <label for="business-name">Business Name</label>
+                        <input type="text" id="business-name" name="business-name" required>
+                        <label for="business-address">Address</label>
+                        <input type="text" id="business-address" name="business-address" required>
+                        <label for="business-phone">Phone Number</label>
+                        <input type="tel" id="business-phone" name="business-phone" required>
+                        <label for="business-email">Email</label>
+                        <input type="email" id="business-email" name="business-email" required>
+                    </fieldset>
+                    <fieldset class="qi-form">
+                        <legend>Client Information</legend>
+                        <label for="client-name">Client Name</label>
+                        <input type="text" id="client-name" name="client-name" required>
+                        <label for="client-address">Address</label>
+                        <input type="text" id="client-address" name="client-address" required>
+                        <label for="client-phone">Phone Number</label>
+                        <input type="tel" id="client-phone" name="client-phone" required>
+                        <label for="client-email">Email</label>
+                        <input type="email" id="client-email" name="client-email" required>
+                    </fieldset>
+                    <fieldset class="qi-form">
+                        <legend>Quote Details</legend>
+                        <label for="quote-date">Quote Date</label>
+                        <input type="date" id="quote-date" name="quote-date" required>
+                        <label for="quote-expiration">Expiration Date</label>
+                        <input type="date" id="quote-expiration" name="quote-expiration" required>
+                        <label for="quote-number">Quote Number</label>
+                        <input type="text" id="quote-number" name="quote-number" required>
+                        <label for="quote-items">Items/Services</label>
+                        <textarea id="quote-items" name="quote-items" rows="5" required></textarea>
+                        <label for="quote-total">Total Amount</label>
+                        <input type="number" id="quote-total" name="quote-total" required>
+                        <label for="additional-notes">Additional Notes</label>
+                        <textarea id="additional-notes" name="additional-notes" rows="3"></textarea>
+                    </fieldset>
+                    <section>
+                        <input type="submit" value="Generate Quote" class="btn">
+                    </section>
+                </form>
+            </section>
+            
+            <section class="qi-cta">
+                <a href="index.html" class="btn">Back to Home</a>
+                <a href="invoice.html" class="btn">Create an Invoice</a>
+            </section>
+        </main>
+    </body>
+</html>
